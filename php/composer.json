@@ -1,0 +1,36 @@
+{
+  "name": "TaskList",
+  "description": "TaskList build using the Laravel Lumen Framework.",
+  "keywords": [
+    "framework",
+    "laravel",
+    "lumen",
+    "taskList"
+  ],
+  "license": "MIT",
+  "type": "project",
+  "require": {
+    "php": ">=7.4",
+    "laravel/lumen-framework": "^8.1",
+    "vlucas/phpdotenv": "^5.2"
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "autoload-dev": {
+    "classmap": [
+      "database/"
+    ]
+  },
+  "scripts": {
+    "post-root-package-install": [
+      "php -r \"copy('.env.example', '.env');\""
+    ]
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
