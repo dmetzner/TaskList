@@ -2,6 +2,10 @@
 
 !frontend
 !frontend/*
+!nodejs
+!nodejs/*
+!nodejs/**
+!nodejs/**/*
 !php
 !php/*
 !php/**
