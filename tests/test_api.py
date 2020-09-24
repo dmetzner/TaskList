@@ -75,7 +75,7 @@ def test_put_tasks_id_01():
 def test_put_tasks_id_02():
     url = BASE_URL+'tasks/77'
     payload = {'name': 'Updated', 'description': '', 'tags': ''}
-    resp = requests.put(url, headers=headers)
+    resp = requests.put(url, headers=headers, data=json.dumps(payload,indent=4))
     assert resp.status_code == 404
 
 def test_put_tasks_id_03():
@@ -161,13 +161,13 @@ def test_get_tasks_id_02():
 def test_put_tags_id_02():
     url = BASE_URL+'tags/77'
     payload = {'name': 'Updated', 'description': ''}
-    resp = requests.put(url, headers=headers)
+    resp = requests.put(url, headers=headers, data=json.dumps(payload,indent=4))
     assert resp.status_code == 404
 
 def test_put_tags_id_03():
     url = BASE_URL+'tags/2'
     payload = {'name': '', 'description': ''}
-    resp = requests.put(url, headers=headers)
+    resp = requests.put(url, headers=headers, data=json.dumps(payload,indent=4))
     assert resp.status_code == 422
 
 def test_get_tasks_03():

@@ -72,7 +72,7 @@ def delete_tag(_id):
 # catch errors
 @app.errorhandler(400)
 def bad_request(e):
-    return jsonify(get_error_response([INVALID_REQUEST_DATA])), 400
+    return jsonify(get_error_response([INVALID_REQUEST_DATA])), STATUS_NOT_FOUND
 
 
 @app.errorhandler(404)
