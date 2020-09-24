@@ -1,0 +1,19 @@
+[package]
+name = "app"
+version = "0.1.0"
+
+[dependencies]
+rocket = "0.4.0"
+rusqlite = "0.16.0"
+rusq = "0.1.1"
+time = "0.1.42"
+serde_json = "1.0.34"
+serde_derive = "1.0.84"
+serde = "1.0.84"
+chrono = { version = "0.4", features = ["serde"] }
+
+[dependencies.rocket_contrib]
+version = "0.4.0"
+default-features = false
+features = ["json", "tera_templates"]
+

@@ -3,6 +3,11 @@
 !frontend
 !frontend/*
 
+!c
+!c/*
+!c/**
+!c/**/*
+
 !go
 !go/*
 !go/**
@@ -22,3 +27,8 @@
 !python/*
 !python/**
 !python/**/*
+
+!rust
+!rust/*
+!rust/**
+!rust/**/*

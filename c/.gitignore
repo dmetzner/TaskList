@@ -1,0 +1,5 @@
+*.o
+*.dep
+*.d
+app
+tasks.db
