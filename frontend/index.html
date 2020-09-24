@@ -1,0 +1,65 @@
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TaskList</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+  </head>
+
+  <body>
+    <h1>TaskList</h1>
+
+    <h2>Add new task</h2>
+    <table class="pure-form pure-table table1">
+      <thead><tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Tags</th>
+        <th></th>
+      </tr></thead>
+      <tbody>
+        <tr>
+          <td><input type="text" name="newTaskName" size="8"/></td>
+          <td><input type="text" name="newTaskDesc" size="16"/></td>
+          <td><input type="text" name="newTaskTags" size="10"/></td>
+          <td><input type="submit" value="Create" onclick="createTask()" class="button-success"/></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br>
+    <h2>My tasks</h2>
+    <table class="pure-form pure-table">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Creation time</th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Tags</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="taskTableBody"></tbody>
+    </table>
+
+
+    <h2>My tags</h2>
+    <table class="pure-form pure-table">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Creation time</th>
+          <th>Name</th>
+          <th>Description</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="tagTableBody"></tbody>
+    </table>
+
+    <script src="index.js"></script>
+  </body>
+</html>
