@@ -2,14 +2,22 @@
 
 !frontend
 !frontend/*
+
+!go
+!go/*
+!go/**
+!go/**/*
+
 !nodejs
 !nodejs/*
 !nodejs/**
 !nodejs/**/*
+
 !php
 !php/*
 !php/**
 !php/**/*
+
 !python
 !python/*
 !python/**
