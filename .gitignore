@@ -1,5 +1,13 @@
 *
 
+!.github
+!.github/*
+!.github/**/
+!.github/**/*
+
+!doc
+!doc/*
+
 !frontend
 !frontend/*
 
@@ -32,3 +40,8 @@
 !rust/*
 !rust/**
 !rust/**/*
+
+!tests
+!tests/*
+!tests/**
+!tests/**/*
