@@ -21,7 +21,7 @@ jobs:
           cd php
           make prepare
           make build
-          make run
+          nohup make run
       - name: SetUp Test env
         run: |
           sudo apt install python python3-pip
