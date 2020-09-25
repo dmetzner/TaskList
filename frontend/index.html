@@ -260,7 +260,7 @@
         xhr.open(method, endpoint, true);
         xhr.setRequestHeader('Content-type','application/json; charset=utf-8');
         xhr.onload = function () {
-          if (true === requestSuccess())
+          if (this.status < HTTP_RESPONSE__OK || this.status > HTTP_RESPONSE__DISAPPOINTED)
           {
             let resp = "Status " + this.status + ": " + this.statusText + "\n";
             resp += "Response: " + this.response;
@@ -271,9 +271,6 @@
         xhr.send(json);
       }
 
-      function requestSuccess() {
-        return this.status >= HTTP_RESPONSE__OK && this.status <= HTTP_RESPONSE__DISAPPOINTED
-      }
     </script>
   </body>
 </html>
