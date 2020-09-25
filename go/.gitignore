@@ -2,3 +2,5 @@ app
 bin/
 src/
 tasks.db
+tasks.db-shm
+tasks.db-wal

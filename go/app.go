@@ -74,7 +74,8 @@ func main() {
 		panic("failed to connect database")
 	}
 
-	defer db.Close()
+    // prevent locked db
+    db.Exec("PRAGMA journal_mode=WAL;")
 
 	db.AutoMigrate(&Task{}, &Tag{}, &TaskTags{})
 
